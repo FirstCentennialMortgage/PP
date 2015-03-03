@@ -1,55 +1,184 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>eRegulations</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/eRegulations/assets/css/normalize.css">
+    <link rel="stylesheet" href="/eRegulations/assets/css/main.css">
+    <link rel="stylesheet" href="/eRegulations/assets/css/syntax.css">
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="/eRegulations/assets/js/respond.min.js"></script>
     <![endif]-->
 
-    <title>PP by FirstCentennialMortgage</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>PP</h1>
-        <h2>Policies and Procedures Library</h2>
-        <a href="https://github.com/FirstCentennialMortgage/PP" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
+    <div class="container">
+      <header role="banner">
+        <div class="wrap">
+          
+          <a href="http://www.consumerfinance.gov/" target="_blank">
+            <img class="logo" src="http://cfpb.github.io/img/logo_210.png" alt="Consumer Financial Protection Bureau">
+          </a>
+          
+          <h1 class="site-title"><a class="title-link" href="/eRegulations/">eRegulations</a></h1>
+        </div>
+      </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <p><img src="http://www.gofcm.com/images/logo.png" alt="">  </p>
+      <div class="wrap content">
 
-<p><strong>Welcome to the First Centennial Mortgage P&amp;P Library</strong>  </p>
+        <aside>
+  <p class="intro">Making regulations easily readable, accessible, and understandable.</p>
+  <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+  <nav class="sidebar-nav" role="navigation">
+    <ul>
+      
+        
+          <li><a href="/eRegulations/#repositories">Repositories</a></li>
+        
+      
+        
+          <li><a href="/eRegulations/#features">Features</a></li>
+        
+      
+        
+          <li><a href="/eRegulations/#architecture">Architecture</a></li>
+        
+      
+        
+          <li><a href="/eRegulations/#technology">Technology</a></li>
+        
+      
+        
+          <li><a href="/eRegulations/#open-source-and-contributing">Open Source Contributing</a></li>
+        
+      
+    </ul>
+  </nav>
+</aside>
+
+        <section id="main" class="main-content" role="main">
+          
+<p>eRegulations is a <a href="http://www.consumerfinance.gov/eregulations">web-based application</a> that makes regulations easy to find, read and understand. It is a work in progress by the <a href="http://consumerfinance.gov/">Consumer Financial Protection Bureau</a>, and is a public domain work of the United States Government.</p>
+
+
+
+
+<section id="repositories">
+  <h2 id="repositories">Repositories</h2>
+  <ul class="repo-list group">
+    <li class="list-icon">
+      <img src="assets/img/octocat.png" width="25px" alt="">
+    </li>
+    
+      <li>
+        <a href="https://github.com/cfpb/regulations-parser">
+          <h4>regulations-parser</h4>
+          <p>Parse regulations</p>
+        </a>
+      </li>
+    
+      <li>
+        <a href="https://github.com/cfpb/regulations-core">
+          <h4>regulations-core</h4>
+          <p>Regulations API</p>
+        </a>
+      </li>
+    
+      <li>
+        <a href="https://github.com/cfpb/regulations-site">
+          <h4>regulations-site</h4>
+          <p>Display the regulations</p>
+        </a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+<h2 id="features">Features</h2>
+
+<p>Some of the main features of the tool are:</p>
+
+<ul>
+  <li>
+    <h4 id="navigability">NAVIGABILITY.</h4>
+    <p>While regulations are traditionally represented as monolithic blocks of text, they contain a great deal of embedded structure. eRegulations teases out that structure and uses it to present the text in a clean, readable form.</p>
+  </li>
+  <li>
+    <h4 id="inline-interpretations">INLINE INTERPRETATIONS.</h4>
+    <p>Many regulation paragraphs have official interpretations that have traditionally been displayed at the end of the regulation, forcing readers to swap back and forth between the regulation content and interpretation at the end. eRegulations parses the interpretations for each paragraph, and displays them right under the paragraph/section being interpreted.</p>
+  </li>
+  <li>
+    <h4 id="definitions">DEFINITIONS.</h4>
+    <p>We highlight words that have been defined in the regulation, and the user can click on the word and see it’s definition without scrolling to the part of the regulation that defines that word.</p>
+  </li>
+  <li>
+    <h4 id="internal-citations">INTERNAL CITATIONS.</h4>
+    <p>The parser parses out all internal citations in the regulation, and we display them as clickable links allowing easy navigation within a regulation.</p>
+  </li>
+  <li>
+    <h4 id="search">SEARCH.</h4>
+    <p>We provide the ability to search for phrases across various versions of a regulation.</p>
+  </li>
+  <li>
+    <h4 id="alternate-versions-of-the-regulations">ALTERNATE VERSIONS OF THE REGULATIONS.</h4>
+    <p>Regulations are evolving documents and are often displayed as changes to the base text. We present whole versions of regulations for each set of changes (We combine Final Rules that have a common effective date into a version).</p>
+  </li>
+  <li>
+    <h4 id="comparing-versions">COMPARING VERSIONS.</h4>
+    <p>We show the difference between whole versions of regulations in a “redline” or word-by-word comparison view. All changes are expressed as additions (shown in green) or deletions (struck-through, lighter gray). This view clearly shows how a regulation changes.</p>
+  </li>
+  <li>
+    <h4 id="retrieve-by-effective-date">RETRIEVE BY EFFECTIVE DATE.</h4>
+    <p>A user can also enter in a date, and retrieve the version of the regulation effective at that point in time.</p>
+  </li>
+  <li>
+    <h4 id="section-by-section-analysis">SECTION-BY-SECTION ANALYSIS.</h4>
+    <p>The notices that compose a version of the regulation contain relevant analyses of the altered sections. We automatically pull that information out and make it accessible while reading the regulation text.</p>
+  </li>
+  <li>
+    <h4 id="responsive-design">RESPONSIVE DESIGN.</h4>
+    <p>The application design is responsive, adjusting to the device and screen size of the user.</p>
+  </li>
+</ul>
+
+<h2 id="architecture">Architecture</h2>
+
+<p>There are three parts to the eRegulations application: a parser that converts regulation text into data (<a href="https://github.com/cfpb/regulations-parser">regulations-parser</a>), an API that hosts this data (<a href="https://github.com/cfpb/regulations-core">regulations-core</a>), and a webapp which uses the data from the API to construct beautiful and usable regulations (<a href="https://github.com/cfpb/regulations-site">regulations-site</a>).</p>
+
+<p>One would typically run the parser against a regulation once (for each version) to populate the API with all the necessary data. regulations-site would then use regulations-core to as necessary to display regulations.</p>
+
+<h2 id="technology">Technology</h2>
+
+<p>regulations-parser is written in Python.</p>
+
+<p>regulations-core is a Django and Haystack application.</p>
+
+<p>The regulations-site front-end is a Backbone.js application nested within AMD modules using Require.js. We also use a Grunt-based build system with Jasmine for unit testing. On the back-end regulations-site is a Django application.</p>
+
+<h2 id="open-source-and-contributing">Open Source and Contributing</h2>
+
+<p>We invite contributions to any part of the application. The project is in the public domain, and all contributions to it will be released as such. By submitting a pull request, you are agreeing to waive all rights to your contribution under the terms of the <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 Public Domain Dedication</a>.</p>
+
+<p>If you contribute the open source work of others, please mark it clearly in your pull request.</p>
+
+
+
         </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/FirstCentennialMortgage/PP/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/FirstCentennialMortgage/PP/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+      </div><!-- /.wrap content -->
 
-          <p class="repo-owner"><a href="https://github.com/FirstCentennialMortgage/PP"></a> is maintained by <a href="https://github.com/FirstCentennialMortgage">FirstCentennialMortgage</a>.</p>
+      <footer role="contentinfo">
+        <div class="wrap">
+          <p>This project is maintained by the <a href="http://cfpb.github.io/">CFPB</a>.</p>
 
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
-
-  
-  </body>
+          <p>Hosted on <a href="http://pages.github.com/">GitHub Pages</a>.</p>
+        </div><!--/.wrap -->
+      </footer>
+    </div> <!-- /.container -->
+    </body>
 </html>
