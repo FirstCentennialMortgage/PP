@@ -1,184 +1,390 @@
 <!DOCTYPE html>
-<html>
+<html lang="language_alias">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
-    <title>eRegulations</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="/eRegulations/assets/css/normalize.css">
-    <link rel="stylesheet" href="/eRegulations/assets/css/main.css">
-    <link rel="stylesheet" href="/eRegulations/assets/css/syntax.css">
+    <title>KNOWLEDGE BASE</title>
+    <meta name="keyword" content="KNOWLEDGE BASE">
+		<script type="text/javascript" src="http://fcmnet.gofcm.com/assets/nocms/js/jquery.tools.min.js"></script>    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    
+
+
+<link rel="stylesheet" type="text/css" href="http://fcmnet.gofcm.com/themes/FCM/assets/default/main.css" /><link rel="stylesheet" type="text/css" href="http://fcmnet.gofcm.com/themes/FCM/assets/default/calendar.css" /><link rel="stylesheet" type="text/css" href="http://fcmnet.gofcm.com/themes/FCM/assets/default/bootstrap.min.css" /><link rel="stylesheet" type="text/css" href="http://fcmnet.gofcm.com/themes/FCM/assets/default/bootstrap-responsive.min.css" /><link rel="stylesheet" type="text/css" href="http://fcmnet.gofcm.com/themes/FCM/assets/default/dropdown-menu.css" /><link rel="stylesheet" type="text/css" href="http://fcmnet.gofcm.com/themes/FCM/assets/default/source/jquery.fancybox.css?v=2.1.4" /><script type="text/javascript" src="http://fcmnet.gofcm.com/assets/caches/4b745281b20279526310f2f3ebc982ba.js"></script>
+ <link rel="icon" href="http://fcmnet.gofcm.com/themes/FCM/assets/default/images/favicon.ico">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-      <script src="/eRegulations/assets/js/respond.min.js"></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <!-- Le fav and touch icons-->
+    <link rel="shortcut icon" href="http://fcmnet.gofcm.com/themes/FCM/assets/default/images/favicon.ico"> 
+    
+    <link rel="stylesheet" href="http://fcmnet.gofcm.com/themes/FCM/assets/default/flexslider.css" type="text/css" media="screen" />
+    <script defer src="http://fcmnet.gofcm.com/themes/FCM/assets/default/js/jquery.flexslider.js"></script>
+    
+    <script type="text/javascript">
+$(function() {
+    $('#example2').dropdown_menu({
+        sub_indicator_class  : 'dropdown-menu-sub-indicator',   // Class given to LI's with submenus
+        vertical_class       : 'dropdown-menu-vertical',        // Class for a vertical menu
+        shadow_class         : 'dropdown-menu-shadow',          // Class for drop shadow on submenus
+        hover_class          : 'dropdown-menu-hover',           // Class applied to hovered LI's
+        open_delay           : 150,                             // Delay on menu open
+        close_delay          : 300,                             // Delay on menu close
+        animation_open       : { opacity : 'show' },            // Animation for menu open
+        speed_open           : 'fast',                          // Animation speed for menu open
+        animation_close      : { opacity : 'hide' },            // Animation for menu close
+        speed_close          : 'fast',                          // Animation speed for menu close
+        sub_indicators       : false,                           // Whether to show arrows for submenus
+        drop_shadows         : false,                           // Whether to apply drop shadow class to submenus
+        vertical             : false,                           // Whether the root menu is vertically aligned
+        viewport_overflow    : 'auto',                          // Handle submenu opening offscreen: "auto", "move", "scroll", or false
+        init                 : function() {}                    // Callback function applied on init
+    }); });
+
+
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+		 });
+ </script>  
+ <link rel="stylesheet" href="http://fcmnet.gofcm.com/themes/FCM/assets/default/jquery.treetable.css" />
+  <link rel="stylesheet" href="http://fcmnet.gofcm.com/themes/FCM/assets/default/jquery.treetable.theme.default.css" />
+ 
+    <script src="http://fcmnet.gofcm.com/themes/FCM/assets/default/js/jquery-ui.js"></script>
+    <script src="http://fcmnet.gofcm.com/themes/FCM/assets/default/js/jquery.treetable.js"></script>
+<link rel="stylesheet" media="all" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" media="all" type="text/css" href="http://fcmnet.gofcm.com/themes/FCM/assets/default/jquery-ui-timepicker-addon.css" /> 
+
+<script type="text/javascript" src="http://fcmnet.gofcm.com/themes/FCM/assets/default/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://fcmnet.gofcm.com/themes/FCM/assets/default/js/jquery-ui-timepicker-addon.js"></script>
+    <script type="text/javascript" src="http://fcmnet.gofcm.com/themes/FCM/assets/default/js/jquery-ui-sliderAccess.js"></script>
+   <link rel="stylesheet" href="/themes/FCM/assets/default/jPages.css">
+<link rel="stylesheet" href="/themes/FCM/assets/default/animate.css">
+<script src="/themes/FCM/assets/default/js/jPages.js"></script> 
+<!--<script type="text/javascript" src="/themes/FCM/assets/default/js/jquery.easyui.min.js"></script>-->
+<link rel="stylesheet" type="text/css" href="/themes/FCM/assets/default/themes/default/easyui.css">
+
+<link rel="stylesheet" href="/themes/FCM/assets/default/custom.css">
+<script src="/themes/FCM/assets/default/js/custom.js"></script>
+<script language="javascript" type="text/javascript">
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+</script>
   </head>
   <body>
-    <div class="container">
-      <header role="banner">
-        <div class="wrap">
-          
-          <a href="http://www.consumerfinance.gov/" target="_blank">
-            <img class="logo" src="http://cfpb.github.io/img/logo_210.png" alt="Consumer Financial Protection Bureau">
-          </a>
-          
-          <h1 class="site-title"><a class="title-link" href="/eRegulations/">eRegulations</a></h1>
+  
+  
+  <div id="container"> <!-- CONTAINER -->
+    <div id="header" align="center"> <!-- HEADER -->
+    <div class="top_right_menu">
+        <div id="log">
+        	<div id="_cms_widget_14">	<div>LOGGED IN AS: jmorelli</div>
+	<div id="log-text2">
+    	<div class="log-text3"><a href="http://fcmnet.gofcm.com/main/logout">Logout</a>&nbsp;&nbsp;&nbsp;<a href="/main/management">SITE ADMIN</a></div>
+		<!--<div class="log-text3"><a href="/main/management">SITE ADMIN</a></div>
+        <div class="log-text3"><a href="/main/management">SITE ADMIN</a></div>        <div style="clear:both"></div>-->
+		<!--<div class="log-lastText">TITLE INFORMATION</div>-->
+        <div class="siteWideSearch"><form action="/main/search" id="searchDocForm" method="get"><input placeholder="Search" type="text" name="searchMain" id="searchMain" class="searchBox" value="" style="width:150px"></form></div>
+	</div>
+</div>
         </div>
-      </header>
-
-      <div class="wrap content">
-
-        <aside>
-  <p class="intro">Making regulations easily readable, accessible, and understandable.</p>
-  <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
-  <nav class="sidebar-nav" role="navigation">
-    <ul>
-      
-        
-          <li><a href="/eRegulations/#repositories">Repositories</a></li>
-        
-      
-        
-          <li><a href="/eRegulations/#features">Features</a></li>
-        
-      
-        
-          <li><a href="/eRegulations/#architecture">Architecture</a></li>
-        
-      
-        
-          <li><a href="/eRegulations/#technology">Technology</a></li>
-        
-      
-        
-          <li><a href="/eRegulations/#open-source-and-contributing">Open Source Contributing</a></li>
-        
-      
-    </ul>
-  </nav>
-</aside>
-
-        <section id="main" class="main-content" role="main">
-          
-<p>eRegulations is a <a href="http://www.consumerfinance.gov/eregulations">web-based application</a> that makes regulations easy to find, read and understand. It is a work in progress by the <a href="http://consumerfinance.gov/">Consumer Financial Protection Bureau</a>, and is a public domain work of the United States Government.</p>
-
-
-
-
-<section id="repositories">
-  <h2 id="repositories">Repositories</h2>
-  <ul class="repo-list group">
-    <li class="list-icon">
-      <img src="assets/img/octocat.png" width="25px" alt="">
-    </li>
+   		 <div id="logo">
+        <a href="/main/"><img border="0" src="http://fcmnet.gofcm.com/themes/FCM/assets/default/images/FCMLogo.png"></a>
+        <img border="0" src="http://fcmnet.gofcm.com/themes/FCM/assets/default/images/IntranetHeaderGraphi.png" id="logo2">
+    	</div>
+    </div>
     
-      <li>
-        <a href="https://github.com/cfpb/regulations-parser">
-          <h4>regulations-parser</h4>
-          <p>Parse regulations</p>
-        </a>
-      </li>
+        
+                <div id="_cms_widget_2"><ul id="example2" class="dropdown-menu"><li ><a  class="dropdown-toggle" data-toggle="dropdown" href="http://fcmnet.gofcm.com/main/index">Home<ul ></ul></a></li><li ><a  class="dropdown-toggle" data-toggle="dropdown" href="http://fcmnet.gofcm.com/main/static_page/MLO_CENTER">MLO CENTER<ul ><li><ul ></ul></li></ul></a></li><li ><a  class="dropdown-toggle" data-toggle="dropdown" href="http://fcmnet.gofcm.com/main/static_page/PROCESSING_CENTER">PROCESSING CENTER<ul ><li><ul ></ul></li></ul></a></li><li ><a  class="dropdown-toggle" data-toggle="dropdown" href="http://fcmnet.gofcm.com/main/static_page/Underwriting_Center">Underwriting Center<ul ><li><ul ></ul></li></ul></a></li><li ><a  class="dropdown-toggle" data-toggle="dropdown" href="http://fcmnet.gofcm.com/main/static_page/Operations_Center">Operations Center<ul ></ul></a></li><li ><a  class="dropdown-toggle" data-toggle="dropdown" href="http://fcmnet.gofcm.com/main/static_page/DIRECTORY">DIRECTORY<ul ></ul></a></li><li ><a  class="dropdown-toggle" data-toggle="dropdown" href="http://fcmnet.gofcm.com/main/static_page/COMPLIANCE">COMPLIANCE<ul ><li><ul ></ul></li></ul></a></li><li ><a  class="dropdown-toggle" data-toggle="dropdown" href="http://fcmnet.gofcm.com/main/static_page/INTERNAL_APPLICATIONS">INTERNAL APPLICATIONS<ul ></ul></a></li><li ><a  id='selectedMenu' class="dropdown-toggle" data-toggle="dropdown" href="http://fcmnet.gofcm.com/main/static_page/KNOWLEDGE_BASE">KNOWLEDGE BASE</a></li><li ><a  class="dropdown-toggle" data-toggle="dropdown" href="http://fcmnet.gofcm.com/main/static_page/FCM_UNIVERSITY">FCM UNIVERSITY</a></li></ul></div>
+            
+    </div><!-- HEADER ENDS -->
     
-      <li>
-        <a href="https://github.com/cfpb/regulations-core">
-          <h4>regulations-core</h4>
-          <p>Regulations API</p>
-        </a>
-      </li>
+    <div id="wrapper"> <!-- WRAPPER -->
+        <div id="contents"> <!-- CONTENTS -->
+        
+             <table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 960px;">
+	<tbody>
+		<tr>
+			<td style="text-align: center;">
+				<img alt="Knowledge Base" src="http://fcmnet.gofcm.com/themes/FCM/assets/default/images/kb.png" />
+				<h1 class="header" style="text-align: left;">
+					Welcome to the Knowledge Base</h1>
+				<p class="body" style="text-align: left;">
+					Here you will find documents that can provide technical assistance, assist with trouble shooting issues, user guides and FAQ information.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<table align="center" border="0" cellpadding="0" cellspacing="0" style="width: 960px;">
+	<tbody>
+		<tr>
+			<td>
+				<div id="_cms_widget_18"><table border="0" width="100%">
+<tr><td align="left">
+KNOWLEDGE BASE - <a class="fancybox" href="#inline1" >Upload</a></td><td align="right"><form action="" id="searchDocForm" method="post"><input type="text" name="searchPageDoc" id="searchPageDoc" placeholder="Search" class="searchBox" value="" /></form></td></tr>
+<tr><td colspan="2">
+<div id="inline1" style="width:400px; min-height:300px; display:none;">
+<div id='errorbox'><ul></ul></div>
+		<form action="" id="uploadForm" name="uploadForm" method="post" enctype="multipart/form-data" onsubmit="return validateForm();">
+        <input type="hidden" name="topLevelParentId" id="topLevelParentId" value="58" />
+        <input type="hidden" name="navigationId" id="navigationId" value="58" />
+        <input type="hidden" name="navigationParentId" id="navigationParentId" value="48" />
+        <table border="0" cellpadding="5">
+        <tr><td>KNOWLEDGE BASE</td><td></td></tr>
+        <tr><td colspan="2"><input type="radio" name="uploadType" id="uploadType" class="selectedType" value="1" /> Folder &nbsp; &nbsp; <input type="radio" name="uploadType"  class="selectedType" id="uploadType" value="2" /> File &nbsp; &nbsp; <input  class="selectedType" type="radio" name="uploadType" id="uploadType" value="3" /> Attach file</td></tr>
+        <tr><td>
+        <div id="div_1" class="uploadBox">
+        <table border="0"><tr><td>Parent Folder:</td><td>
+        <span id="parentFoldersList"><select name="selParentFolder" id="selParentFolder">
+        <!--<option value=""></option>-->
+        <option value='53'>Office Productivity Software</option><option value='83'>Loan Origination Software</option><option value='89'>Computer Hardware & Peripherals</option><option value='93'>Telecommunications</option><option value='184'>Policies & Procedures Library</option><option value='48'>KNOWLEDGE BASE</option>        </select></span>
+        </td></tr>
+        <tr><Td>
+            Folder: </Td><td><input type="text" name="folderName" id="folderName" /> </td></tr>
+            <tr><Td colspan="2" align="center">
+            <input type="button" id="addFolder" name="addFolder" value="Add Folder" /></Td></tr>
+        </table>
+            <div id="folderStatus" class="errMesg" style="display:none">Folder added.</div>
+        </div>
+        <div id="div_2" class="uploadBox">
+        <table border="0"><tr><td>
+        Select Folder:</td><td> <span id="foldersList"><select name="selFolder" id="selFolder">
+        <option value='48'>KNOWLEDGE BASE</option><option value='53'>Office Productivity Software</option><option value='55'>Microsoft Outlook</option><option value='78'>Microsoft Word</option><option value='79'>Microsoft Excel</option><option value='80'>PrimoPDF</option><option value='81'>Adobe Reader</option><option value='83'>Loan Origination Software</option><option value='84'>Encompass360</option><option value='87'>DataTrac/WebTrac</option><option value='89'>Computer Hardware & Peripherals</option><option value='90'>Desktop Computers</option><option value='91'>Laptop Computers</option><option value='92'>Printers</option><option value='93'>Telecommunications</option><option value='94'>Office Phones</option><option value='95'>Cellular Phones</option><option value='184'>Policies & Procedures Library</option><option value='185'>Lending Operations</option>        </select></span></td></tr>
+        <tr><Td>File:</Td><Td><input type="file" name="ffilename" id="ffilename" /></Td></tr>
+        <tr><Td>Uploaded by:</Td><Td><input type="text" readonly="readonly" name="uploaded_by" id="uploaded_by" value="John Morelli" /></Td></tr>
+        <tr><Td valign="top">Keywords:</Td><Td><textarea name="file_keywords" id="file_keywords" rows="5" cols="10" ></textarea></Td></tr>
+        <tr><Td colspan="2" align="center"><input type="submit" value="Upload" name="uploadFile" /></Td></tr>
+        </table>
+        </div>
+        <div id="div_3" class="uploadBox">
+        Coming soon..
+        </div>
+        </td><td></td></tr>
+        </table>
+        </form>
+	</div>
+</td></tr>
+</table>
+
+<script type="text/javascript">
+for(var i=1;i<=3;i++)
+		{
+		   $('#div_'+i).hide();
+		}
+$(document).ready(function() {
+	$('.selectedType').click(function() {
+		var value=$(this).val();
+		if(value==2)
+		{
+			var navigation_id=$('#navigationId').val();
+			$.post("/main/getFoldersAjax", { navigation_id:navigation_id,type:'child'  }, function(data) {
+				if(data!='')
+				{
+					$('#foldersList').html(data);
+				}
+			});
+		}
+		for(var i=1;i<=3;i++)
+		{
+		   if(i==value)	
+		   $('#div_'+i).show();
+		   else
+		   $('#div_'+i).hide();
+		}
+		
+	 });  
+	
+	$('#addFolder').click(function() {
+			var foldername=$('#folderName').val();
+			if(foldername=='')
+			{
+				alert('Please enter folder name');
+				return false;
+			}
+			
+			$('#addFolder').attr("disabled", "disabled");
+			
+			var navigation_id=$('#navigationId').val();
+			var navigation_parent_id=$('#navigationParentId').val();
+			var parentFolder=$('#selParentFolder').val();
+		$.post("/main/addFolder", { name:foldername,navigation_id:navigation_id,parent_folder:parentFolder  }, function(data) {
+  			if(data==1)
+			{
+				$('#folderStatus').fadeIn("slow");
+				$('#folderStatus').fadeOut(3000);
+				$('#addFolder').removeAttr("disabled", "");
+				
+				$.post("/main/getFoldersAjax", { navigation_id:navigation_id, navigation_parent_id:navigation_parent_id,type:'parent'  }, function(data) {
+					if(data!='')
+					{
+						$('#parentFoldersList').html(data);
+					}
+				});
+				
+			}
+			
+		});							  
+	});								  
+	
+  });
+function validateForm()
+{
+	var frm=document.uploadForm;
+	/*if(frm.selFolder.value=='')
+	{
+		alert('Please select folder');
+		return false;
+	}*/
+	if(frm.ffilename.value=='')
+	{
+		alert('Please select file to upload');
+		return false;
+	}
+	if(frm.file_keywords.value=='')
+	{
+		alert('Please enter keywords');
+		return false;
+	}
+	/*var navigation_id='KNOWLEDGE_BASE';
+	$.post("/main/delete_cache2", { navigation_id:navigation_id  }, function(data) {
+				alert('deleted cache file....');
+				return true;
+			});*/
+	return deleteCache();
+	
+}
+function delFiles(frm)
+{
+	var Mesg='';
+	if(frm.delType.value=='folder')
+	Mesg='Are you sure to delete this folder? All files and folder under this will be deleted!';
+	else
+	Mesg='Are you sure to delete this file?';
+	
+	if(confirm(Mesg))
+	{
+		return deleteCache();
+		//return true;
+	}else
+		return false;
+}
+
+$(function() {
+    $('#searchDocForm').each(function() {
+        $('#searchPageDoc').keypress(function(e) {
+            // Enter pressed?
+            if(e.which == 10 || e.which == 13) {
+                this.form.submit();
+            }
+        });
+
+        //$('input[type=submit]').hide();
+    });
+});
+
+function deleteCache()
+{
+	var test=0;
+	var navigation_id='KNOWLEDGE_BASE';
+	$.ajax({
+      type: "POST",
+      url: "/main/delete_cache2",
+  async: false,
+      data: "navigation_id="+navigation_id,
+      success: function(html)
+        {
+
+             if(html == 1)
+                {
+                    test=1;
+                }   
+
+             else
+                 {
+                     test=0;
+                 }
+
+          }
+
+     });
+    if(test==1)
+    {
+    return true;
+    }
+    else if(test==0)
+    {
+    return false;
+    }
+}
+
+</script>
+</div> <div id="_cms_widget_19"><table id="example-advanced"><thead><tr><th>Name</th><th>Type</th><th>Uploaded By</th><th>Uploaded On</th><th>Size</th><th>Edit</th><th>Delete</th></tr></thead><tbody><tr data-tt-id="1"><td><span class="folder">Office Productivity Software</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form action="" class="delForm" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="53"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="1-1" data-tt-parent-id="1"><td><span class="folder">Microsoft Outlook</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="55"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="1-2" data-tt-parent-id="1"><td><span class="folder">Microsoft Word</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="78"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="1-3" data-tt-parent-id="1"><td><span class="folder">Microsoft Excel</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="79"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="1-4" data-tt-parent-id="1"><td><span class="folder">PrimoPDF</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="80"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="1-5" data-tt-parent-id="1"><td><span class="folder">Adobe Reader</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="81"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2"><td><span class="folder">Loan Origination Software</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form action="" class="delForm" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="83"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1" data-tt-parent-id="2"><td><span class="folder">Encompass360</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="84"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-1" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/139">Encompass Resouce center Handout.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:41 AM</td><Td>102.67 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/139"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="139"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-2" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/140">Encompass360 Installation.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:42 AM</td><Td>512.09 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/140"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="140"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-3" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/141">Quick Start -  2010 Itemization 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:42 AM</td><Td>62.29 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/141"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="141"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-4" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/143">Quick Start - Appraisals, Viewing and Sending 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:43 AM</td><Td>40.09 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/143"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="143"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-5" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/144">Quick Start - Duplicating a loan in Encompass 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:43 AM</td><Td>148.52 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/144"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="144"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-6" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/145">Quick Start - FHA MI for REfi prior to May 31 2009 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:44 AM</td><Td>78.15 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/145"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="145"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-7" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/146">Quick Start - Link Contacts to File 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:44 AM</td><Td>42.59 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/146"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="146"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-8" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/147">Quick Start - Loan Officer signs 1003 in the Loan Center 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:44 AM</td><Td>61.41 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/147"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="147"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-9" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/148">Quick Start - Mortgage Insurance FHA Conv 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:44 AM</td><Td>54.98 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/148"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="148"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-10" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/149">Quick Start - Ordering a 4506 T 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:45 AM</td><Td>52.25 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/149"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="149"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-11" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/150">Quick Start - Re setting NCO Password  in Encompass 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:45 AM</td><Td>46.69 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/150"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="150"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-12" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/151">Quick Start - Retrieving On Line Applications 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:45 AM</td><Td>92.63 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/151"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="151"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-13" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/152">Quick Start - Scanning and filing Ink signed application docs 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:45 AM</td><Td>56.98 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/152"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="152"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-14" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/153">Quick Start - Schedule of Real Estate Owned and Subordinated 2nds 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:46 AM</td><Td>52.55 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/153"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="153"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-15" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/154">Quick Start - Sending a Credit Report 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:46 AM</td><Td>46.63 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/154"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="154"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-16" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/155">Quick Start - Sending Your Loan to Processing in Encompass 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:47 AM</td><Td>56.49 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/155"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="155"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-17" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/156">Quick Start - Single Premium MI with Lender Credit 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:48 AM</td><Td>55.19 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/156"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="156"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-18" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/157">Quick Start - Wet, Ink Sign, resend to the borrower 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:48 AM</td><Td>77.45 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/157"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="157"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-19" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/158">Quick Start- Re Disclosure in Encompass 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:48 AM</td><Td>52.5 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/158"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="158"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-20" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/159">Quick Start-Auth code, eSign Ink Sign and Fax docments in Encompass 1.0.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:49 AM</td><Td>69.17 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/159"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="159"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-21" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/160">TQL Services Tool - Instructions for Loan Processors.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 11 2013 01:49 AM</td><Td>369.21 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/160"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="160"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-22" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/305">How to Input Investment Property into Encompass.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 29 2013 08:36 AM</td><Td>393.82 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/305"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="305"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-23" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/306">Completing a Changed Circumstance Detail Form.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 29 2013 08:37 AM</td><Td>125.18 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/306"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="306"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-24" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/307">How to use Encompass Conversation Log.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 29 2013 08:38 AM</td><Td>582.4 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/307"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="307"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-25" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/310">Verbal Credit Authorization - Instructions for Originators.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 29 2013 08:40 AM</td><Td>186.44 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/310"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="310"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-26" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/315">Processing Procedure.docx</a></span></td><td>File</td><Td>Administrator</td><Td>Jul 29 2013 08:43 AM</td><Td>948.2 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/315"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="315"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-27" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/327">HPML Loan Requirements at Approval Milestone.pdf</a></span></td><td>File</td><Td>Marty Richards</td><Td>Jul 30 2013 06:31 AM</td><Td>134.71 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/327"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="327"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-28" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/340">Encompass FCM Manual 2-Originating a Loan.pdf</a></span></td><td>File</td><Td>Administrator</td><Td>Aug 21 2013 09:28 AM</td><Td>1000.43 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/340"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="340"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-1-29" data-tt-parent-id="2-1"><td><span class="file"><a href="/main/download_file/58/365">Import FNMA to Encompass.pdf</a></span></td><td>File</td><Td>Marty Richards</td><Td>Oct 02 2013 03:26 AM</td><Td>174.5 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/365"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="365"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="2-2" data-tt-parent-id="2"><td><span class="folder">DataTrac/WebTrac</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="87"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="3"><td><span class="folder">Computer Hardware & Peripherals</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form action="" class="delForm" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="89"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="3-1" data-tt-parent-id="3"><td><span class="folder">Desktop Computers</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="90"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="3-2" data-tt-parent-id="3"><td><span class="folder">Laptop Computers</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="91"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="3-3" data-tt-parent-id="3"><td><span class="folder">Printers</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="92"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="4"><td><span class="folder">Telecommunications</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form action="" class="delForm" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="93"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="4-1" data-tt-parent-id="4"><td><span class="folder">Office Phones</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="94"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="4-2" data-tt-parent-id="4"><td><span class="folder">Cellular Phones</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="95"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="4-2-1" data-tt-parent-id="4-2"><td><span class="file"><a href="/main/download_file/58/161">Mail Server Change Instructions for iPhone and Android (1).pdf</a></span></td><td>File</td><Td>Joe Bergthold</td><Td>Jul 11 2013 02:09 AM</td><Td>920.29 KB</td><Td><a class="fancybox fancybox.ajax" href="/main/widget_edit_file/58/161"><img  border="0" src="/assets/grocery_crud/themes/flexigrid/css/images/edit.png"></a></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="file"><input type="hidden" name="delValue" id="delValue" value="161"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="5"><td><span class="folder">Policies & Procedures Library</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form action="" class="delForm" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="184"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr><tr data-tt-id="5-1" data-tt-parent-id="5"><td><span class="folder">Lending Operations</span></td><td>Folder</td><Td></td><Td></td><Td></td><td></td><td><form class="delForm" action="" method="post" onSubmit="return delFiles(this);"><input type="hidden" name="delType" id="delType" value="folder"><input type="hidden" name="delValue" id="delValue" value="185"><input type="image" border="0" src="/themes/FCM/assets/default/images/remove.png"  /></form></td></tr></tbody></table><script>
     
-      <li>
-        <a href="https://github.com/cfpb/regulations-site">
-          <h4>regulations-site</h4>
-          <p>Display the regulations</p>
-        </a>
-      </li>
+
+      $("#example-advanced").treetable({ expandable: true });
+
+      // Highlight selected row
+      $("#example-advanced tbody tr").mousedown(function() {
+        $("tr.selected").removeClass("selected");
+        $(this).addClass("selected");
+      });
+
+      // Drag & Drop Example Code
+      $("#example-advanced .file, #example-advanced .folder").draggable({
+        helper: "clone",
+        opacity: .75,
+        refreshPositions: true, // Performance?
+        revert: "invalid",
+        revertDuration: 300,
+        scroll: true
+      });
+
+      $("#example-advanced .folder").each(function() {
+        $(this).parents("tr").droppable({
+          accept: ".file, .folder",
+          drop: function(e, ui) {
+            var droppedEl = ui.draggable.parents("tr");
+            $("#example-advanced").treetable("move", droppedEl.data("ttId"), $(this).data("ttId"));
+          },
+          hoverClass: "accept",
+          over: function(e, ui) {
+            var droppedEl = ui.draggable.parents("tr");
+            if(this != droppedEl[0] && !$(this).is(".expanded")) {
+              $("#example-advanced").treetable("expandNode", $(this).data("ttId"));
+            }
+          }
+        });
+      });
+
+   
+    </script> </div></td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+        
+        </div> <!-- CONTENT ENDS -->
+    </div> <!-- WRAPPER ENDS -->
+    <!--<div id="footer">
+    Corporate Office, 2471 W. Sullivan Road, Aurora, IL 60506 | <a target="_blank" href="http://www.GoFCM.com">www.GoFCM.com</a> 
+    </div>-->
+</div>
+  
+  
+  
+  
     
-  </ul>
-</section>
 
+    <!--/.fluid-container-->
 
-
-<h2 id="features">Features</h2>
-
-<p>Some of the main features of the tool are:</p>
-
-<ul>
-  <li>
-    <h4 id="navigability">NAVIGABILITY.</h4>
-    <p>While regulations are traditionally represented as monolithic blocks of text, they contain a great deal of embedded structure. eRegulations teases out that structure and uses it to present the text in a clean, readable form.</p>
-  </li>
-  <li>
-    <h4 id="inline-interpretations">INLINE INTERPRETATIONS.</h4>
-    <p>Many regulation paragraphs have official interpretations that have traditionally been displayed at the end of the regulation, forcing readers to swap back and forth between the regulation content and interpretation at the end. eRegulations parses the interpretations for each paragraph, and displays them right under the paragraph/section being interpreted.</p>
-  </li>
-  <li>
-    <h4 id="definitions">DEFINITIONS.</h4>
-    <p>We highlight words that have been defined in the regulation, and the user can click on the word and see it’s definition without scrolling to the part of the regulation that defines that word.</p>
-  </li>
-  <li>
-    <h4 id="internal-citations">INTERNAL CITATIONS.</h4>
-    <p>The parser parses out all internal citations in the regulation, and we display them as clickable links allowing easy navigation within a regulation.</p>
-  </li>
-  <li>
-    <h4 id="search">SEARCH.</h4>
-    <p>We provide the ability to search for phrases across various versions of a regulation.</p>
-  </li>
-  <li>
-    <h4 id="alternate-versions-of-the-regulations">ALTERNATE VERSIONS OF THE REGULATIONS.</h4>
-    <p>Regulations are evolving documents and are often displayed as changes to the base text. We present whole versions of regulations for each set of changes (We combine Final Rules that have a common effective date into a version).</p>
-  </li>
-  <li>
-    <h4 id="comparing-versions">COMPARING VERSIONS.</h4>
-    <p>We show the difference between whole versions of regulations in a “redline” or word-by-word comparison view. All changes are expressed as additions (shown in green) or deletions (struck-through, lighter gray). This view clearly shows how a regulation changes.</p>
-  </li>
-  <li>
-    <h4 id="retrieve-by-effective-date">RETRIEVE BY EFFECTIVE DATE.</h4>
-    <p>A user can also enter in a date, and retrieve the version of the regulation effective at that point in time.</p>
-  </li>
-  <li>
-    <h4 id="section-by-section-analysis">SECTION-BY-SECTION ANALYSIS.</h4>
-    <p>The notices that compose a version of the regulation contain relevant analyses of the altered sections. We automatically pull that information out and make it accessible while reading the regulation text.</p>
-  </li>
-  <li>
-    <h4 id="responsive-design">RESPONSIVE DESIGN.</h4>
-    <p>The application design is responsive, adjusting to the device and screen size of the user.</p>
-  </li>
-</ul>
-
-<h2 id="architecture">Architecture</h2>
-
-<p>There are three parts to the eRegulations application: a parser that converts regulation text into data (<a href="https://github.com/cfpb/regulations-parser">regulations-parser</a>), an API that hosts this data (<a href="https://github.com/cfpb/regulations-core">regulations-core</a>), and a webapp which uses the data from the API to construct beautiful and usable regulations (<a href="https://github.com/cfpb/regulations-site">regulations-site</a>).</p>
-
-<p>One would typically run the parser against a regulation once (for each version) to populate the API with all the necessary data. regulations-site would then use regulations-core to as necessary to display regulations.</p>
-
-<h2 id="technology">Technology</h2>
-
-<p>regulations-parser is written in Python.</p>
-
-<p>regulations-core is a Django and Haystack application.</p>
-
-<p>The regulations-site front-end is a Backbone.js application nested within AMD modules using Require.js. We also use a Grunt-based build system with Jasmine for unit testing. On the back-end regulations-site is a Django application.</p>
-
-<h2 id="open-source-and-contributing">Open Source and Contributing</h2>
-
-<p>We invite contributions to any part of the application. The project is in the public domain, and all contributions to it will be released as such. By submitting a pull request, you are agreeing to waive all rights to your contribution under the terms of the <a href="http://creativecommons.org/publicdomain/zero/1.0/">CC0 Public Domain Dedication</a>.</p>
-
-<p>If you contribute the open source work of others, please mark it clearly in your pull request.</p>
-
-
-
-        </section>
-
-      </div><!-- /.wrap content -->
-
-      <footer role="contentinfo">
-        <div class="wrap">
-          <p>This project is maintained by the <a href="http://cfpb.github.io/">CFPB</a>.</p>
-
-          <p>Hosted on <a href="http://pages.github.com/">GitHub Pages</a>.</p>
-        </div><!--/.wrap -->
-      </footer>
-    </div> <!-- /.container -->
-    </body>
+  </body>
 </html>
